@@ -1,18 +1,12 @@
 import React from 'react';
 
 
-interface FoodsInterface {
-    fav : string;
-    something: boolean;
-    others: Array<string>;
-}
-
-type FoodsProps<FoodsInterface> = {
+type FoodsProps = {
     name: string,
     price?: number
 };
 
-function Foods({name, price}: FoodsProps<FoodsInterface>) {
+function Foods({name, price}: FoodsProps) {
     return (
         <div>
             i like {name}
